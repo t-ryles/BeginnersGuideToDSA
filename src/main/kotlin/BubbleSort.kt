@@ -10,6 +10,7 @@ class BubbleSort {
                 if (arr[j] > arr[j + 1]) {
                     //temp variable for swap
                     val temp = arr[j]
+                    //swap
                     arr[j] = arr[j + 1]
                     arr[j + 1] = temp
                 }
@@ -18,3 +19,11 @@ class BubbleSort {
         return arr
     }
 }
+
+/**
+* Notes:
+ * For Loop with a nested For Loop.
+ * Loop [i] is the outer loop, Loop [j] is the inner loop.
+ * Loop [j] does the comparison with [j + 1]
+ * While doing the comparison, need to create a temp value for swap.
+*/
